@@ -4,7 +4,65 @@
 <!DOCTYPE html><!DOCTYPE html>
 <html lang="es">
 <head><!DOCTYPE html>
+<html lang="es"><!DOCTYPE html>
 <html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocasión</title>
+<style>
+body{margin:0;font-family:Arial;background:#f4f4f4}
+header{background:#111;color:white;text-align:center;padding:25px}
+.hero{text-align:center;background:white;padding:40px 20px}
+button{padding:14px 22px;border:0;border-radius:8px;background:#111;color:white;font-size:16px}
+section{padding:30px 20px;max-width:900px;margin:auto}
+.cajas{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.caja{background:white;padding:25px;text-align:center;border-radius:10px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🐶 OCASIÓN</h1>
+<p>Compra y vende todo tipo de artículos</p>
+</header>
+
+<div class="hero">
+<h2>Bienvenido a Ocasión</h2>
+<p>Tu marketplace para comprar y vender.</p>
+<button onclick="mostrarCategorias()">VER CATEGORÍAS</button>
+</div>
+
+<section id="categorias" style="display:none">
+<h2>Categorías</h2>
+<div class="cajas">
+<div class="caja">📱 Electrónica</div>
+<div class="caja">🚗 Coches</div>
+<div class="caja">🏠 Hogar</div>
+<div class="caja">👕 Ropa</div>
+<div class="caja">🎮 Videojuegos</div>
+<div class="caja">🐶 Mascotas</div>
+</div>
+</section>
+
+<section>
+<h2>Vender un artículo</h2>
+<button onclick="vender()">PUBLICAR ARTÍCULO</button>
+</section>
+
+<script>
+function mostrarCategorias(){
+document.getElementById("categorias").style.display="block";
+document.getElementById("categorias").scrollIntoView();
+}
+
+function vender(){
+alert("Próximamente podrás publicar tu artículo en Ocasión.");
+}
+</script>
+
+</body>
+</html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
